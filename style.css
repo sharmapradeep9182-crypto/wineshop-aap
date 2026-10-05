@@ -1,0 +1,327 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1{
+    position: relative;
+    margin: 20px;
+    
+}
+
+/* logo-img */
+.logo{
+    width: 90px;
+    height: 65px;
+}
+
+/* iycans */
+.iycan{
+    font-size: 25px;
+    font-style: italic;
+    position: relative;
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.iycan:hover{
+    border-bottom: 4px solid goldenrod ;
+}
+
+.search{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    outline: 2px solid goldenrod;
+    border: none;
+}
+
+.btn-1{
+    padding: 5px;
+    border-radius:20px ;
+    border: none;
+    background-color: goldenrod;
+}
+
+
+.btn-2{
+    width: 70px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-2:hover{
+    background-color: cornflowerblue;
+}
+
+
+/* top */
+.top{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    padding-top: 60px;
+    background-image: url(../new-project/new-image/Moody\ Burgundy\ Wine\ Still\ Life.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top h4{
+    color: goldenrod;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 276px;
+}
+.top h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 276px;
+}
+.top p{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 276px;
+}
+.top button{
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: goldenrod;
+    margin-left: 276px;
+}
+
+/* hadding */
+.hadding h1{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.hadding p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    
+}
+
+/* middle */
+.middle{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    margin: 0px 150px 0px 90px;
+    
+}
+
+
+
+.product-1{
+    width: 300px;
+    height:150px ;
+    border-radius: 20px;
+    background-image: url(../new-project/new-image/saman-taheri-MXMs8q2OjeA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 60px;
+    box-shadow: 4px 3px 13px gray;
+}
+
+
+.product-2{
+    width: 300px;
+    height:150px ;
+    border-radius: 20px;
+    margin-left: 60px;
+    background-image: url(../new-project/new-image/ambitious-studio-rick-barrett-b2jKJ4jAfkg-unsplash.jpg);
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 3px 13px gray;
+}
+.product-3{
+    width: 300px;
+    height:150px;
+    border-radius: 20px;
+    margin-left: 60px;
+    background-image: url(../new-project/new-image/roberta-sorge-IywM7AQTZcM-unsplash.jpg);
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 3px 13px gray;
+}
+.product-4{
+    width: 300px;
+    height:150px ;
+    border-radius: 20px;
+    margin-left: 60px;
+    background-image: url(../new-project/new-image/anirudh-7_MfdeyLy_A-unsplash.jpg);
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 3px 13px gray;
+}
+
+
+.middle h6{
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.middle p{
+    color: goldenrod;
+    margin-left: 30px;
+}
+
+.middle button{
+    width: 50px;
+    height: 30px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.middle button:hover{
+    background-color: black;
+    color: goldenrod;
+}
+
+.hadding-2 h1{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.hadding-2 p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.section{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item{
+    border-radius: 30px;
+    box-shadow: 4px 3px  50px gray;
+    width: 300px;
+    height: 470px;
+}
+
+.item img{
+    width: 300px;
+    height: 250px;
+}
+
+.item .btn-1{
+    width: 60px;
+    height: 30px;
+    color: goldenrod;
+    background-color: rgb(75, 16, 16);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.item h3,p{
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.item .price{
+    text-decoration: line-through;
+    font-weight: 100;
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.441);
+}
+
+.item .price-1{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.item .btn-2{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 110px;
+    height: 40px;
+    color: black;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background-image: url(../new-project/new-image/ChatGPT\ Image\ Sep\ 28\,\ 2026\,\ 06_58_01\ PM.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-4 {
+    width: 200px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.box-3{
+    width: 200px;
+    height: 300px;
+    border-right:4px solid goldenrod ;
+}
+.box-3 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.box-4 h2{
+    color: goldenrod;
+   
+}
+.box-4 h4,h5{
+    color: white;
+    margin-top: 10px;
+}
+ .box-4 h3{
+    color: goldenrod;
+ }
+
+ .end{
+    color: goldenrod;
+ }
+
+
+
