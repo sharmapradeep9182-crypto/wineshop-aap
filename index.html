@@ -10,32 +10,64 @@
 </head>
 
 <body>
-    <div class="nav">
-        <div class="box">
-            <img class="logo" src="../project-2/new-image/ChatGPT Image Sep 19, 2026, 09_39_56 PM.png" alt="">
-        </div>
 
+<div class="nav">
 
-        <div class="box-1">
-            <a class="iycan" href="">Home</a>
-            <a class="iycan" href="">Red-Wine</a>
-            <a class="iycan" href="">White-Wine</a>
-            <a class="iycan" href="">Help</a>
-            <a class="iycan" href="">About</a>
-        </div>
-
-
-        <div class="box-1">
-            <input class="search" type="search" placeholder="search your wine">
-            <button class="btn-1">search</button>
-        </div>
-
-        <div class="box-1">
-            <span><i class="fa-solid fa-heart"></i></span>
-           <span><i class="fa-solid fa-cart-shopping"></i></span>
-          <span><i class="fa-solid fa-user"></i> </span>
-        </div>
+    <!-- Logo -->
+    <div class="box">
+        <img class="logo"
+            src="../project-2/new-image/ChatGPT Image Sep 19, 2026, 09_39_56 PM.png"
+            alt="PK Wine">
     </div>
+
+
+    <!-- Hamburger -->
+    <button class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+    <!-- Navigation Links -->
+    <div class="box-1 nav-links" id="navLinks">
+        <a class="iycan" href="">Home</a>
+        <a class="iycan" href="">Red-Wine</a>
+        <a class="iycan" href="">White-Wine</a>
+        <a class="iycan" href="">Help</a>
+        <a class="iycan" href="">About</a>
+    </div>
+
+
+    <!-- Search -->
+    <div class="box-1 search-box">
+        <input class="search" type="search" placeholder="Search your wine">
+        <button class="btn-1">Search</button>
+    </div>
+
+
+    <!-- Icons -->
+    <div class="box-1 icons">
+        <span>
+            <i class="fa-solid fa-heart"></i>
+        </span>
+
+        <span>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </span>
+
+        <span>
+            <i class="fa-solid fa-user"></i>
+        </span>
+    </div>
+
+</div>
+
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 
     <div class="top">
         <h4>PREMIUM QUALITY WINES</h4>

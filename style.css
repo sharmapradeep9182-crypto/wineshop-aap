@@ -1,327 +1,1405 @@
-*{
-    padding: 0%;
-    margin: 0%;
+/* =====================================================================
+   TABLE OF CONTENTS
+   ---------------------------------------------------------------------
+   PART 1 : BASE STYLES (Desktop / Default)
+      1. Reset
+      2. Navbar
+      3. Hero / Top Section
+      4. Shop By Category
+      5. Featured Wine (Heading + Product Cards)
+      6. Footer
+
+   PART 2 : MEDIA QUERIES (Responsive)
+      A. Large Desktop   (1200px and above)
+      B. Laptop          (max-width: 1199px)
+      C. Tablet          (max-width: 991px)
+      D. Mobile          (max-width: 767px)
+      E. Small Mobile    (max-width: 480px)
+      F. Very Small      (max-width: 360px)
+===================================================================== */
+
+
+
+/* #####################################################################
+   PART 1 : BASE STYLES
+##################################################################### */
+
+
+/* =====================================================================
+   1. RESET
+===================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav{
+body {
     width: 100%;
-    height: 60px;
-    position: relative;
+    overflow-x: hidden;
+}
+
+/* Common centered heading */
+.hadding {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================================
+   2. NAVBAR
+===================================================================== */
+
+/* ---------- Navbar wrapper ---------- */
+.nav {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 30px;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
 
-.box-1{
+    gap: 25px;
+
     position: relative;
-    margin: 20px;
-    
 }
 
-/* logo-img */
-.logo{
-    width: 90px;
-    height: 65px;
-}
-
-/* iycans */
-.iycan{
-    font-size: 25px;
-    font-style: italic;
-    position: relative;
-    margin-right: 25px;
-    text-decoration: none;
-    color: black;
-}
-
-.iycan:hover{
-    border-bottom: 4px solid goldenrod ;
-}
-
-.search{
-    width: 250px;
-    height: 25px;
-    border-radius: 10px;
-    text-align: center;
-    outline: 2px solid goldenrod;
-    border: none;
-}
-
-.btn-1{
-    padding: 5px;
-    border-radius:20px ;
-    border: none;
-    background-color: goldenrod;
-}
-
-
-.btn-2{
-    width: 70px;
-    height: 32px;
-    border-radius: 20px;
-    border: none;
-}
-
-.btn-2:hover{
-    background-color: cornflowerblue;
-}
-
-
-/* top */
-.top{
-    width: 100%;
-    height: 300px;
-    background-color: black;
-    position: relative;
-    padding-top: 60px;
-    background-image: url(../project-2/new-image/Moody\ Burgundy\ Wine\ Still\ Life.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.top h4{
-    color: goldenrod;
-    position: relative;
-    margin-bottom: 10px;
-    margin-left: 276px;
-}
-.top h1{
-    color: white;
-    font-size: 40px;
-    margin-bottom: 10px;
-    position: relative;
-    margin-left: 276px;
-}
-.top p{
-    color: white;
-    margin-bottom: 10px;
-    margin-left: 276px;
-}
-.top button{
-    width: 140px;
-    height: 30px;
-    border: none;
-    border-radius: 20px;
-    background-color: goldenrod;
-    margin-left: 276px;
-}
-
-/* hadding */
-.hadding h1{
-    text-align: center;
-    font-weight: 400;
-    margin-top: 20px;
-}
-.hadding p{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 40px;
-    
-}
-
-/* middle */
-.middle{
-    width: 100%;
-    height: 200px;
-    position: relative;
+/* ---------- Logo ---------- */
+.box {
     display: flex;
-    margin: 0px 150px 0px 90px;
-    
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Navigation links ---------- */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.iycan {
+    text-decoration: none;
+    color: #222;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.iycan:hover {
+    color: #8b0000;
+}
+
+/* ---------- Search box ---------- */
+.search-box {
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+    max-width: 300px;
+}
+
+.search {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 12px;
+
+    border: 1px solid #ccc;
+    border-right: none;
+
+    outline: none;
+
+    border-radius: 5px 0 0 5px;
+
+    font-size: 14px;
+}
+
+.search:focus {
+    border-color: #8b0000;
+}
+
+.btn-1 {
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    background: #8b0000;
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 0 5px 5px 0;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.btn-1:hover {
+    background: #5f0000;
+}
+
+/* ---------- Icons (cart, user, etc.) ---------- */
+.icons {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-shrink: 0;
+}
+
+.icons span {
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.icons span:hover {
+    color: #8b0000;
+}
+
+/* ---------- Hamburger (hidden on desktop) ---------- */
+.hamburger {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    color: #222;
 }
 
 
+/* =====================================================================
+   3. HERO / TOP SECTION
+===================================================================== */
 
-.product-1{
-    width: 300px;
-    height:150px ;
-    border-radius: 20px;
-    background-image: url(../project-2/new-image/saman-taheri-MXMs8q2OjeA-unsplash.jpg);
+.top {
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 30px;
+
+    position: relative;
+
+    /* Background image with dark overlay */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../project-2/new-image/Moody Burgundy Wine Still Life.png");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-left: 60px;
-    box-shadow: 4px 3px 13px gray;
-}
 
-
-.product-2{
-    width: 300px;
-    height:150px ;
-    border-radius: 20px;
-    margin-left: 60px;
-    background-image: url(../project-2/new-image/ambitious-studio-rick-barrett-b2jKJ4jAfkg-unsplash.jpg);
-     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 4px 3px 13px gray;
-}
-.product-3{
-    width: 300px;
-    height:150px;
-    border-radius: 20px;
-    margin-left: 60px;
-    background-image: url(../project-2/new-image/roberta-sorge-IywM7AQTZcM-unsplash.jpg);
-     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 4px 3px 13px gray;
-}
-.product-4{
-    width: 300px;
-    height:150px ;
-    border-radius: 20px;
-    margin-left: 60px;
-    background-image: url(../project-2/new-image/anirudh-7_MfdeyLy_A-unsplash.jpg);
-     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 4px 3px 13px gray;
-}
-
-
-.middle h6{
     color: white;
+
+    overflow: hidden;
+}
+
+/* ---------- Small heading ---------- */
+.top h4 {
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+    font-weight: 600;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Main heading ---------- */
+.top h1 {
+    font-size: clamp(40px, 5vw, 75px);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Paragraph ---------- */
+.top p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Button ---------- */
+.top button {
+    padding: 14px 28px;
+
+    border: none;
+
+    background: #8b0000;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    position: relative;
+    z-index: 2;
+}
+
+.top button:hover {
+    background: #5f0000;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================================
+   4. MIDDLE / SHOP BY CATEGORY
+===================================================================== */
+
+.middle {
+    width: 100%;
+    min-height: 200px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 60px;
+
+    margin: 0;
+    padding: 0 30px;
+
+    position: relative;
+}
+
+/* ---------- Category cards ---------- */
+.product-1,
+.product-2,
+.product-3,
+.product-4 {
+    width: 300px;
+    height: 150px;
+
+    flex-shrink: 0;
+
+    border-radius: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 4px 3px 13px gray;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+/* ---------- Category background images ---------- */
+.product-1 {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
+        url(../project-2/new-image/saman-taheri-MXMs8q2OjeA-unsplash.jpg);
+}
+
+.product-2 {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
+        url(../project-2/new-image/ambitious-studio-rick-barrett-b2jKJ4jAfkg-unsplash.jpg);
+}
+
+.product-3 {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
+        url(../project-2/new-image/roberta-sorge-IywM7AQTZcM-unsplash.jpg);
+}
+
+.product-4 {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
+        url(../project-2/new-image/anirudh-7_MfdeyLy_A-unsplash.jpg);
+}
+
+/* ---------- Category hover ---------- */
+.product-1:hover,
+.product-2:hover,
+.product-3:hover,
+.product-4:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 4px 8px 20px gray;
+}
+
+/* ---------- Category text ---------- */
+.middle h6 {
+    color: white;
+
     font-size: 30px;
-    margin-top: 50px;
+
+    margin-top: 45px;
     margin-left: 30px;
+    margin-bottom: 3px;
 }
 
-.middle p{
+.middle p {
     color: goldenrod;
+
     margin-left: 30px;
+    margin-bottom: 0;
+
+    font-size: 14px;
 }
 
-.middle button{
+/* ---------- "Go" button ---------- */
+.middle button {
     width: 50px;
     height: 30px;
+
     background-color: goldenrod;
     color: white;
+
     border: none;
+
     border-radius: 20px;
+
     margin-top: 10px;
     margin-left: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
-.middle button:hover{
+.middle button:hover {
     background-color: black;
     color: goldenrod;
 }
 
-.hadding-2 h1{
+
+/* =====================================================================
+   5. FEATURED WINE
+===================================================================== */
+
+/* ---------- Heading ---------- */
+.hadding-2 h1 {
     text-align: center;
+
     font-weight: 400;
+
     margin-top: 20px;
 }
 
-.hadding-2 p{
+.hadding-2 p {
     text-align: center;
+
     font-size: 20px;
+
     margin-bottom: 25px;
 }
 
-.section{
+/* ---------- Product section wrapper ---------- */
+.section {
     width: 100%;
-    height: 470px;
+    min-height: 470px;
+
     display: flex;
-    justify-content: space-evenly;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 35px;
+
+    padding: 0 30px;
 }
 
-.item{
+/* ---------- Product card ---------- */
+.item {
     border-radius: 30px;
-    box-shadow: 4px 3px  50px gray;
+
+    box-shadow: 4px 3px 50px gray;
+
     width: 300px;
-    height: 470px;
+    min-height: 470px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    background-color: white;
+
+    transition: 0.3s ease;
 }
 
-.item img{
+.item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 4px 8px 35px gray;
+}
+
+/* ---------- Product image ---------- */
+.item img {
     width: 300px;
     height: 250px;
+
+    object-fit: contain;
+
+    display: block;
 }
 
-.item .btn-1{
+/* ---------- Discount badge button ---------- */
+.item .btn-1 {
     width: 60px;
     height: 30px;
+
     color: goldenrod;
     background-color: rgb(75, 16, 16);
+
+    border: none;
+
     border-radius: 20px;
+
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 5px;
 }
 
-.item h3,p{
+/* ---------- Product text ---------- */
+.item h3 {
     margin-bottom: 5px;
     margin-left: 5px;
+
+    font-size: 18px;
 }
 
-.item .price{
+.item p {
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    font-size: 14px;
+}
+
+/* ---------- Price (old + new) ---------- */
+.item .price {
     text-decoration: line-through;
+
     font-weight: 100;
+
     margin-left: 5px;
+
     color: rgba(0, 0, 0, 0.441);
+
+    display: inline-block;
 }
 
-.item .price-1{
+.item .price-1 {
     margin-left: 5px;
     margin-top: 10px;
+
+    display: inline-block;
 }
 
-.item .btn-2{
+/* ---------- Add to cart button ---------- */
+.item .btn-2 {
     margin-top: 10px;
     margin-left: 5px;
+
     width: 110px;
     height: 40px;
+
     color: black;
     background-color: goldenrod;
+
+    border: none;
+
     border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
-footer{
+.item .btn-2:hover {
+    background-color: rgb(75, 16, 16);
+    color: goldenrod;
+}
+
+
+/* =====================================================================
+   6. FOOTER
+===================================================================== */
+
+footer {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
+
     margin-top: 50px;
-    background-image: url(../project-2/new-image/ChatGPT\ Image\ Sep\ 28\,\ 2026\,\ 06_58_01\ PM.png);
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
+        url(../project-2/new-image/ChatGPT\ Image\ Sep\ 28\,\ 2026\,\ 06_58_01\ PM.png);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     display: flex;
+
     justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 50px 30px;
+
+    gap: 30px;
 }
 
-.box-4 {
+/* ---------- Footer logo box ---------- */
+.box-3 {
     width: 200px;
-    height: 300px;
-    margin-top: 50px;
+    min-height: 300px;
+
+    border-right: 4px solid goldenrod;
+
+    flex-shrink: 0;
 }
 
-.box-3{
-    width: 200px;
-    height: 300px;
-    border-right:4px solid goldenrod ;
-}
-.box-3 img{
+.box-3 img {
     width: 150px;
     height: 150px;
+
+    object-fit: contain;
+
     border-radius: 10px;
+
     margin-top: 40px;
     margin-left: 30px;
 }
 
-.box-4 h2{
-    color: goldenrod;
-   
+/* ---------- Footer columns ---------- */
+.box-4 {
+    width: 200px;
+    min-height: 300px;
+
+    margin-top: 0;
+
+    flex-shrink: 0;
 }
-.box-4 h4,h5{
+
+.box-4 h2 {
+    color: goldenrod;
+
+    margin-bottom: 10px;
+}
+
+.box-4 h3 {
+    color: goldenrod;
+
+    margin-bottom: 15px;
+}
+
+.box-4 h4,
+.box-4 h5 {
     color: white;
+
     margin-top: 10px;
+
+    line-height: 1.5;
 }
- .box-4 h3{
+
+.end {
     color: goldenrod;
- }
-
- .end{
-    color: goldenrod;
- }
+}
 
 
 
+/* #####################################################################
+   PART 2 : MEDIA QUERIES
+   (Bade screen se chhote screen ki taraf — order mat badalna)
+##################################################################### */
+
+
+/* =====================================================================
+   A. LARGE DESKTOP  |  1200px and above
+===================================================================== */
+@media (min-width: 1200px) {
+
+    /* ----- Navbar ----- */
+    .nav {
+        padding: 12px 50px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .iycan {
+        font-size: 17px;
+    }
+
+    .search-box {
+        max-width: 320px;
+    }
+
+    /* ----- Hero ----- */
+    .top {
+        min-height: 600px;
+        padding: 100px 50px;
+        background-position: center center;
+    }
+
+    .top h4 {
+        font-size: 16px;
+    }
+
+    .top p {
+        font-size: 19px;
+    }
+
+    .top button {
+        padding: 15px 32px;
+        font-size: 17px;
+    }
+
+    /* ----- Category ----- */
+    .middle {
+        gap: 60px;
+        padding: 0 30px;
+    }
+
+    /* ----- Products ----- */
+    .section {
+        gap: 35px;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+/* =====================================================================
+   B. LAPTOP / SMALL DESKTOP  |  max-width: 1199px
+===================================================================== */
+@media (max-width: 1199px) {
+
+    /* ----- Navbar ----- */
+    .nav {
+        padding: 10px 25px;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .iycan {
+        font-size: 15px;
+    }
+
+    .search-box {
+        max-width: 250px;
+    }
+
+    .icons {
+        gap: 15px;
+    }
+
+    /* ----- Hero ----- */
+    .top {
+        min-height: 500px;
+        padding: 70px 30px;
+        background-position: center center;
+    }
+
+    .top h1 {
+        font-size: 55px;
+    }
+
+    .top p {
+        font-size: 17px;
+    }
+
+    /* ----- Category (2 columns) ----- */
+    .middle {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        gap: 25px;
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+
+    /* ----- Products (2 columns) ----- */
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        gap: 30px;
+        min-height: auto;
+    }
+
+    /* ----- Footer (3 columns) ----- */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        min-height: auto;
+    }
+
+    .box-3 {
+        border-right: none;
+        border-bottom: 4px solid goldenrod;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* =====================================================================
+   C. TABLET  |  max-width: 991px
+===================================================================== */
+@media (max-width: 991px) {
+
+    /* ----- Navbar ----- */
+    .nav {
+        padding: 10px 20px;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .iycan {
+        font-size: 14px;
+    }
+
+    .search-box {
+        max-width: 210px;
+    }
+
+    .search {
+        font-size: 13px;
+    }
+
+    .btn-1 {
+        padding: 0 10px;
+    }
+
+    .icons {
+        gap: 12px;
+    }
+
+    .icons span {
+        font-size: 17px;
+    }
+
+    /* ----- Hero ----- */
+    .top {
+        min-height: 450px;
+        padding: 60px 25px;
+        background-position: center center;
+    }
+
+    .top h4 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .top h1 {
+        font-size: 45px;
+    }
+
+    .top p {
+        font-size: 16px;
+        max-width: 550px;
+    }
+
+    .top button {
+        padding: 13px 25px;
+        font-size: 15px;
+    }
+
+    /* ----- Category ----- */
+    .middle {
+        grid-template-columns: repeat(2, 280px);
+        gap: 20px;
+    }
+
+    .product-1,
+    .product-2,
+    .product-3,
+    .product-4 {
+        width: 280px;
+        height: 150px;
+    }
+
+    .middle h6 {
+        font-size: 27px;
+        margin-left: 25px;
+    }
+
+    .middle p {
+        margin-left: 25px;
+    }
+
+    .middle button {
+        margin-left: 25px;
+    }
+
+    /* ----- Products ----- */
+    .section {
+        grid-template-columns: repeat(2, 280px);
+        gap: 25px;
+    }
+
+    .item {
+        width: 280px;
+    }
+
+    .item img {
+        width: 280px;
+        height: 240px;
+    }
+
+    /* ----- Footer (2 columns) ----- */
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 25px;
+    }
+}
+
+
+/* =====================================================================
+   D. MOBILE  |  max-width: 767px
+===================================================================== */
+@media (max-width: 767px) {
+
+    /* ================= NAVBAR ================= */
+
+    .nav {
+        width: 100%;
+        min-height: 65px;
+        padding: 10px 15px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    /* Hamburger visible on mobile */
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    /* Hide desktop navigation (opens with .active) */
+    .nav-links {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0;
+
+        padding: 10px 0;
+
+        order: 4;
+
+        border-top: 1px solid #ddd;
+    }
+
+    /* Show menu when hamburger is clicked */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .iycan {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Search hidden until menu is open */
+    .search-box {
+        width: 100%;
+        max-width: none;
+        order: 5;
+        margin-top: 10px;
+        display: none;
+    }
+
+    /* Show search when menu is active */
+    .nav-links.active ~ .search-box {
+        display: flex;
+    }
+
+    .search {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .btn-1 {
+        height: 40px;
+        padding: 0 15px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 15px;
+        margin-left: 5px;
+    }
+
+    .icons span {
+        font-size: 18px;
+    }
+
+    /* ================= HERO ================= */
+
+    .top {
+        width: 100%;
+        min-height: 430px;
+        padding: 50px 20px;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .top h4 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .top h1 {
+        font-size: clamp(32px, 9vw, 45px);
+        line-height: 1.15;
+        margin-bottom: 18px;
+        max-width: 600px;
+    }
+
+    .top p {
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 400px;
+        margin-bottom: 25px;
+    }
+
+    .top button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    /* ================= CATEGORY (1 column) ================= */
+
+    .middle {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        padding: 0 20px 30px;
+    }
+
+    .product-1,
+    .product-2,
+    .product-3,
+    .product-4 {
+        width: 100%;
+        max-width: 400px;
+        height: 170px;
+    }
+
+    .middle h6 {
+        font-size: 27px;
+        margin-top: 55px;
+        margin-left: 25px;
+    }
+
+    .middle p {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+
+    .middle button {
+        margin-left: 25px;
+    }
+
+    /* ================= FEATURED HEADING ================= */
+
+    .hadding-2 h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .hadding-2 p {
+        font-size: 16px;
+    }
+
+    /* ================= PRODUCTS (1 column) ================= */
+
+    .section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 25px;
+        padding: 0 20px 30px;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 350px;
+        min-height: 470px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 280px;
+        object-fit: contain;
+    }
+
+    /* ================= FOOTER (1 column) ================= */
+
+    footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 25px;
+        padding: 45px 20px 35px;
+        min-height: auto;
+    }
+
+    .box-3 {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 3px solid goldenrod;
+        padding-bottom: 25px;
+    }
+
+    .box-3 img {
+        margin: 0;
+        width: 120px;
+        height: 120px;
+    }
+
+    .box-4 {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .box-4 h4,
+    .box-4 h5 {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =====================================================================
+   E. SMALL MOBILE  |  max-width: 480px
+===================================================================== */
+@media (max-width: 480px) {
+
+    /* ----- Navbar ----- */
+    .nav {
+        padding: 8px 12px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .hamburger {
+        font-size: 23px;
+    }
+
+    .icons {
+        gap: 12px;
+    }
+
+    .icons span {
+        font-size: 17px;
+    }
+
+    .iycan {
+        font-size: 15px;
+        padding: 11px 0;
+    }
+
+    .btn-1 {
+        padding: 0 12px;
+    }
+
+    /* ----- Hero ----- */
+    .top {
+        min-height: 400px;
+        padding: 45px 15px;
+
+        /* Mobile background positioning */
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .top h4 {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        margin-bottom: 12px;
+    }
+
+    .top h1 {
+        font-size: 34px;
+        max-width: 350px;
+    }
+
+    .top p {
+        font-size: 14px;
+        max-width: 330px;
+    }
+
+    /* Line breaks hide on small screens */
+    .top p br {
+        display: none;
+    }
+
+    .top button {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+
+    /* ----- Category ----- */
+    .middle {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .product-1,
+    .product-2,
+    .product-3,
+    .product-4 {
+        max-width: 100%;
+        height: 155px;
+        border-radius: 17px;
+    }
+
+    .middle h6 {
+        font-size: 23px;
+        margin-top: 45px;
+        margin-left: 20px;
+    }
+
+    .middle p {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .middle button {
+        margin-left: 20px;
+        width: 48px;
+        height: 28px;
+    }
+
+    /* ----- Featured heading ----- */
+    .hadding-2 h1 {
+        font-size: 27px;
+    }
+
+    .hadding-2 p {
+        font-size: 14px;
+    }
+
+    /* ----- Products ----- */
+    .section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .item {
+        max-width: 100%;
+        min-height: 450px;
+        border-radius: 20px;
+    }
+
+    .item img {
+        height: 250px;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .box-4 h2 {
+        font-size: 22px;
+    }
+
+    .box-4 h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================================================
+   F. VERY SMALL MOBILE  |  max-width: 360px
+===================================================================== */
+@media (max-width: 360px) {
+
+    /* ----- Navbar ----- */
+    .nav {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        width: 62px;
+    }
+
+    .icons {
+        gap: 9px;
+    }
+
+    .icons span {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        font-size: 21px;
+    }
+
+    .btn-1 {
+        padding: 0 10px;
+        font-size: 13px;
+    }
+
+    /* ----- Hero ----- */
+    .top {
+        min-height: 370px;
+        padding: 40px 12px;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .top h4 {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .top h1 {
+        font-size: 30px;
+    }
+
+    .top p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .top button {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+
+    /* ----- Category ----- */
+    .product-1,
+    .product-2,
+    .product-3,
+    .product-4 {
+        height: 145px;
+    }
+
+    .middle h6 {
+        font-size: 20px;
+        margin-top: 42px;
+    }
+
+    .middle p {
+        font-size: 12px;
+    }
+
+    /* ----- Products ----- */
+    .item img {
+        height: 230px;
+    }
+
+    .item h3 {
+        font-size: 17px;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+        padding: 40px 12px 30px;
+    }
+}
