@@ -219,7 +219,7 @@ body {
             rgba(0, 0, 0, 0.35),
             rgba(0, 0, 0, 0.45)
         ),
-        url("../project-2/new-image/Moody\ Burgundy\ Wine\ Still\ Life.webp");
+        url("./new-image/Moody\ Burgundy\ Wine\ Still\ Life.webp");
 
     background-repeat: no-repeat;
     background-position: center;
@@ -351,25 +351,25 @@ body {
 .product-1 {
     background-image:
         linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
-        url(../project-2/new-image/saman-taheri-MXMs8q2OjeA-unsplash.webp);
+        url(./new-image/saman-taheri-MXMs8q2OjeA-unsplash.webp);
 }
 
 .product-2 {
     background-image:
         linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
-        url(../project-2/new-image/ambitious-studio-rick-barrett-b2jKJ4jAfkg-unsplash.webp);
+        url(./new-image/ambitious-studio-rick-barrett-b2jKJ4jAfkg-unsplash.webp);
 }
 
 .product-3 {
     background-image:
         linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
-        url(../project-2/new-image/roberta-sorge-IywM7AQTZcM-unsplash.webp);
+        url(./new-image/roberta-sorge-IywM7AQTZcM-unsplash.webp);
 }
 
 .product-4 {
     background-image:
         linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
-        url(../project-2/new-image/anirudh-7_MfdeyLy_A-unsplash.webp);
+        url(./new-image/anirudh-7_MfdeyLy_A-unsplash.webp);
 }
 
 /* ---------- Category hover ---------- */
@@ -588,7 +588,7 @@ footer {
 
     background-image:
         linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
-        url(../project-2/new-image/ChatGPT\ Image\ Sep\ 28\,\ 2026\,\ 06_58_01\ PM.webp);
+        url(./new-image/ChatGPT\ Image\ Sep\ 28\,\ 2026\,\ 06_58_01\ PM.webp);
 
     background-repeat: no-repeat;
     background-position: center;
